@@ -1,38 +1,29 @@
-# 配置语言及相应版本
 language: node_js
-
 node_js:
-  - "4"
-
-# 项目所在分支
+- "4"  # nodejs的版本
 branches:
   only:
-  - master
-
-# 配置环境
+  - master  # 设置自动化部署的源码分支
+env:
+  global:
+    secure: Vv/S3LBMayduA3RLEzlOpCHIYA6gHKWPeqMqLhFFD4ZjJvoQvw32wga3uHtPpcEoS9ZBJ0YBs0uIT4ftl3sNgKf+QULA74fmbGGRTB3AWb/rzOc6o1FeXnamhTyY8C+dBvxd6KG06Rj/54Ak30xe2W5+32TYfbVT7KOGleBSRfWlTUSIf7V3BqE42CjbNsve/MWMMk0WOa7PhnzT54xkBKfmSVqfK8i4UcrG4B5s4XUrgrcujz9RVfhDUfpPDdN13O/JGHLbK9te/2daM1o45yGrDui1jmUkvpN/g0Vh8Nr4Vl4UVy6K2yKHLCsSOVLL0d/SznAouWLUQO2YdZpDdC/lotkO0fAc3BlQ+8QZjfRJFl+8O9ptfDJIIDFjehI3u6s2o8ukgc0UhkZugCzRrvvbZsNNVhdXMIJFYXetRlavxriklQUGoCpooRr40ygZ5atCHZe8ttFsKWVJBvgHqGJ2JJjOI+tqMgbYWyNJKPWTvMeDCR26CShlP48KFgBq9ETNe2eRqCPiqeepup5pAqg0K4HusiiwMp9Se7qEFHnRNIRIPN8omDAKc/VGv4A2T8MUnhtTtEBtEYnDroqXRX+awwjc1hcEmW4V/mu5XQcligTN7uirYfmFI0gif4PvGfcoBuwv6RExnYu1qeFYSxDPyvg9tCiY/t5NdCeatXU=
 before_install:
-# 替换为刚才生成的解密信息
-- openssl aes-256-cbc -K $encrypted_aa56e9bd84f9_key -iv $encrypted_aa56e9bd84f9_iv -in .travis/id_rsa.enc -out ~/.ssh/id_rsa -d
-# 改变文件权限
-- chmod 600 ~/.ssh/id_rsa 
-# 配置 ssh
-- eval $(ssh-agent)
-- ssh-add ~/.ssh/id_rsa
-- cp .travis/ssh_config ~/.ssh/config
-# 配置 git 替换为自己的信息
-- git config --global user.name 'millylee'
-- git config --global user.email millylee@qq.com
-
-# 安装依赖
+- export TZ='Asia/Shanghai'  # 设置时区
+- npm install -g hexo
+- npm install -g hexo-cli
+before_script:
+# 设置github账户信息
+- git config --global user.name "millylee" #设置github用户名
+- git config --global user.email millylee@qq.com #设置github用户邮箱
+# github仓库操作
+- sed -i'' "s~git@github.com:millylee/krpano.git~https://${REPO_TOKEN}:x-oauth-basic@github.com/millylee/krpano.git~" _config.yml
+# 安装依赖组件
 install:
-- npm install hexo-cli -g
 - npm install
-
-# 部署的命令
+# 执行的命令
 script:
-- npm run deploy  # hexo clean && hexo g -d
-
-# 缓存npm包
-cache:
-  directories:
-    - node_modules
+- hexo clean
+- hexo generate
+# 执行的成功后执行 
+after_success:
+- hexo deploy

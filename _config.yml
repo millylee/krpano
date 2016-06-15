@@ -23,7 +23,8 @@ theme: mitopic
 # 部署
 deploy:
   type: git
-  repo: git@github.com:millylee/millylee.github.io.git
+  repo: git@github.com:millylee/krpano.git
+  branch: gh-pages
 
 # 评论
 comment:
