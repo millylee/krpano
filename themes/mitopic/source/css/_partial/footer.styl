@@ -1,0 +1,34 @@
+#footer
+  clearfix()
+  padding: 40px 0
+  color: darken(color-gray, 10%)
+  font-family: font-title
+  position: relative
+  text-align: center
+  @media mq-normal
+    text-align: left
+  @media print
+    display: none
+  a
+    color: inherit
+    text-decoration: none
+    transition: 0.2s
+    &:hover
+      color: color-link-hover
+
+#footer-copyright
+  line-height: 1.4
+  @media mq-normal
+    float: left
+
+#footer-links
+  margin-top: 1em
+  @media mq-normal
+    float: right
+    margin-top: 0
+
+.footer-link
+  font-size: 30px
+  margin-left: 20px
+  &:first-child
+    margin-left: 0

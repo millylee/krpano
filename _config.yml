@@ -1,0 +1,50 @@
+title: 99知识平台
+subtitle: "快速、高质的多端产品一站式的解决方案。"
+keywords: "99知识平台,前端"
+description: "99知识平台为你提供快速、高质的多端产品一站式的解决方案。"
+author: Milly Lee
+language: zh-cn
+timezone: UTC
+url: https://f2e.tming.net.cn
+root: /
+permalink: news/:year/:month/:day/:title/
+archive_dir: news
+code_dir: downloads/code
+new_post_name: :year-:month-:day-:title.md
+post_asset_folder: true
+highlight:
+  enable: true
+  line_number: false
+per_page: 0
+
+# 主题
+theme: mitopic
+
+# 部署
+deploy:
+  type: git
+  repo: git@github.com:millylee/millylee.github.io.git
+
+# 评论
+comment:
+  duoshuo: 99knowledge
+
+# 统计
+analytics:
+  baidu: cb9af96e6e2fed8bd03189163e3a47b5
+
+# 搜索
+algolia:
+  en:
+    api_key: c3d5d4c995b5e0c2ffb5623900279a66
+    index_name: hexo
+  zh-tw:
+    api_key: c83d2ec3440f40aec6d0e695ecec7ef3
+    index_name: hexo_zh-tw
+  zh-cn:
+    api_key: cdea7d4e47d84f6145b77e7f68689f35
+    index_name: hexo_zh-cn
+
+# 社交
+twitter: millyleecn
+github: millylee
