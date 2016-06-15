@@ -27,3 +27,7 @@ script:
 # 执行的成功后执行 
 after_success:
 - hexo deploy
+# 缓存npm包
+cache:
+  directories:
+    - node_modules
