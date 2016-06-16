@@ -2,10 +2,8 @@ menu:
   index: Index
   docs: Docs
   api: API
-  news: News
-  plugins: Plugins
-  themes: Themes
-  search: Search
+  news: news
+  examples: Examples
 
 index:
   get_started: Get started

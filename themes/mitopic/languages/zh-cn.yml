@@ -2,10 +2,8 @@ menu:
   index: 首页
   docs: 文档
   api: API
-  news: 新闻
-  plugins: 插件
-  themes: 主题
-  search: 搜索
+  news: 更新
+  examples: 案例
 
 index:
   get_started: 开始使用
@@ -21,7 +19,7 @@ page:
 sidebar:
   docs:
     getting_started: 开始使用
-    overview: 概述
+    pano: 全景漫游
     setup: 建站
     configuration: 配置
     commands: 命令

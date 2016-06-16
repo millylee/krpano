@@ -11,5 +11,4 @@
   {{ css('css/navy') }}
   <!-- endbuild -->
   <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="http://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
 </head>

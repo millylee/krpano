@@ -97,7 +97,7 @@ hexo.extend.helper.register('url_for_lang', function(path){
 });
 
 hexo.extend.helper.register('raw_link', function(path){
-  return 'https://github.com/tm99/krpano/edit/master/source/' + path;
+  return 'https://github.com/millylee/krpano/edit/master/source/' + path;
 });
 
 hexo.extend.helper.register('page_anchor', function(str){
@@ -145,11 +145,4 @@ hexo.extend.helper.register('canonical_path_for_nav', function(){
 hexo.extend.helper.register('lang_name', function(lang){
   var data = this.site.data.languages[lang];
   return data.name || data;
-});
-
-hexo.extend.helper.register('disqus_lang', function(){
-  var lang = this.page.lang;
-  var data = this.site.data.languages[lang];
-
-  return data.disqus_lang || lang;
 });

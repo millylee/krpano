@@ -1,6 +1,6 @@
 docs:
   getting_started:
-    overview: index.html
+    pano: index.html
     setup: setup.html
     configuration: configuration.html
     commands: commands.html
