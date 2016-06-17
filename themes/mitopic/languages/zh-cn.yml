@@ -20,8 +20,8 @@ sidebar:
   docs:
     getting_started: 开始使用
     pano: 全景漫游
-    setup: 建站
-    configuration: 配置
+    files: 文件说明
+    krpano_droplet: Krpano Droplet
     commands: 命令
     migration: 迁移
     basic_usage: 基本操作

@@ -1,8 +1,8 @@
 docs:
   getting_started:
     pano: index.html
-    setup: setup.html
-    configuration: configuration.html
+    files: files.html
+    krpano_droplet: krpano-droplet.html
     commands: commands.html
     migration: migration.html
   basic_usage:
