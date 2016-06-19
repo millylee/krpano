@@ -1,5 +1,5 @@
 layout: plugins
-title: Themes
+title: 案例
 data: themes
 partial: theme
 comments: false
