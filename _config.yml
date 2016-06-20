@@ -20,7 +20,7 @@ highlight:
 per_page: 0
 
 # 主题
-theme: simplebootstrap
+theme: mitopic
 
 # 部署
 deploy:
