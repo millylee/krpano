@@ -16,3 +16,24 @@ vtour/
 | -- tour.html          #用来浏览全景的页面，需要本地服务环境
 | -- tour_editor.html   #添加热点（hotspot）与初始化视角的设置
 ```
+
+## vtour 运作机制
+
+Krpano 是通过`viewer`引擎来实现浏览静态图片时产生“三维”效果，而这一切则是通过`tour.html`这个入口文件。
+
+过滤掉一些没用的代码，可以看到入口文件主代码如下：
+
+```html
+<div id="pano"></div>
+<script src="tour.js"></script>
+<script>
+embedpano({
+    swf: "tour.swf", //有则表示加载flash引擎，如果设置html5:only则不需要该值
+    xml: "tour.xml",
+    target: "pano", //要渲染到的目标容器ID
+    html5: "auto",
+    mobilescale: 1.0,
+    passQueryParameters: true
+});
+</script>
+```
