@@ -23,3 +23,6 @@ sidebar:
     files: 文件说明
     krpano_droplet: Krpano Droplet
     vtour: Vtour 文件夹说明
+    krpano_element: Krpano 内置元素
+    advanced_usage: 高级用法
+    javascript_interface: 与 JavaScript 交互

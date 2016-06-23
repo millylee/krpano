@@ -29,11 +29,12 @@ Krpano 是通过`viewer`引擎来实现浏览静态图片时产生“三维”�
 <script>
 embedpano({
     swf: "tour.swf", //有则表示加载flash引擎，如果设置html5:only则不需要该值
-    xml: "tour.xml",
+    xml: "tour.xml", //启动时的配置文件
     target: "pano", //要渲染到的目标容器ID
-    html5: "auto",
-    mobilescale: 1.0,
-    passQueryParameters: true
+    html5: "only", //如果有需要用到flash，可设置为auto
+    //id: "krpanoSWFObject", //默认的krpano对象，每一个viewer对应唯一id，与JS交互时要用到
+    mobilescale: 1.0, //移动设备缩放，1表示不缩放，默认0.5
+    passQueryParameters: false //是否接受URL传参，例如：tour.html?html5=only&startscene=scene2
 });
 </script>
 ```
