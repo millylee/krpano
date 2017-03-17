@@ -2,8 +2,9 @@
 
 const version = 'ver20170317';
 const __DEVELOPMENT__ = false;
-const __DEBUG__ = false;
+const __DEBUG__ = true;
 const offlineResources = [
+  self.location.hostname,
   '/',
 ];
 
