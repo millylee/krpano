@@ -6,15 +6,16 @@ const __DEBUG__ = true;
 const offlineResources = [
   self.location.hostname,
   '/',
+  '/offline.html',
+  '/offline.svg',
+  'cdn.bootcss.com',
 ];
 
 // 排除缓存域名列表
 const ignoreFetch = [
-  /https?:\/\/cdn.bootcss.com\//,
   /https?:\/\/static.duoshuo.com\//,
   /https?:\/\/hm.baidu.com\//,
 ];
-
 
 //////////
 // Install
@@ -108,11 +109,11 @@ function cachedOrOffline(request) {
 
 function offlineResponse(request) {
   log('(offline)', request.method, request.url);
-  // if (request.url.match(/\.(jpg|png|gif|svg|jpeg)(\?.*)?$/)) {
-  //   return caches.match('/offline.svg');
-  // } else {
-  //   return caches.match('/offline.html');
-  // }
+  if (request.url.match(/\.(jpg|png|gif|svg|jpeg)(\?.*)?$/)) {
+    return caches.match('/offline.svg');
+  } else {
+    return caches.match('/offline.html');
+  }
 }
 
 ///////////

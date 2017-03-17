@@ -69,7 +69,7 @@ hexo.extend.helper.register('header_menu', function(className){
   var result = '';
   var self = this;
   var lang = this.page.lang;
-  var isZhcn = lang === 'zh-cmn-hans';
+  var isZhcn = lang === 'zh-CN';
 
   _.each(menu, function(path, title){
     if (!isZhcn && ~localizedPath.indexOf(title)) path = lang + path;
@@ -82,7 +82,7 @@ hexo.extend.helper.register('header_menu', function(className){
 
 hexo.extend.helper.register('canonical_url', function(lang){
   var path = this.page.canonical_path;
-  if (lang && lang !== 'zh-cmn-hans') path = lang + '/' + path;
+  if (lang && lang !== 'zh-CN') path = lang + '/' + path;
 
   return this.config.url + '/' + path;
 });
@@ -91,7 +91,7 @@ hexo.extend.helper.register('url_for_lang', function(path){
   var lang = this.page.lang;
   var url = this.url_for(path);
 
-  if (lang !== 'zh-cmn-hans' && url[0] === '/') url = '/' + lang + url;
+  if (lang !== 'zh-CN' && url[0] === '/') url = '/' + lang + url;
 
   return url;
 });
