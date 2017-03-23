@@ -1,7 +1,7 @@
 <!-- scripts -->
 <script>
 if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('serviceworker.js');
+      navigator.serviceWorker.register('/serviceworker.js');
     }
 </script>
 <!-- build:js build/js/main.js -->
