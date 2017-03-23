@@ -29,8 +29,7 @@ deploy:
   branch: gh-pages
 
 # 评论
-comment:
-  disqus: krpanocn
+comment: false
 
 # 统计
 analytics:
