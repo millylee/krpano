@@ -1,4 +1,4 @@
-const CACHE_NAME = 'krpano-v1'
+const CACHE_NAME = 'krpano-v2'
 const HOSTNAME_WHITELIST = [
     self.location.hostname,
     'cdn.bootcss.com'

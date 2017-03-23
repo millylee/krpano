@@ -30,7 +30,7 @@ deploy:
 
 # 评论
 comment:
-  duoshuo: 99knowledge
+  disqus: krpanocn
 
 # 统计
 analytics:
