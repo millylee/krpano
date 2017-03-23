@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Krpano 中文</title>
+  <subtitle>Krpano 非官方中文文档</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://krpano.milly.me/"/>
+  <updated>2017-03-23T03:29:59.122Z</updated>
+  <id>http://krpano.milly.me/</id>
+  
+  <author>
+    <name>Milly Lee</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Krpano 1.19 - WebVR</title>
+    <link href="http://krpano.milly.me/news/2015/02/14/krpano-1-19/"/>
+    <id>http://krpano.milly.me/news/2015/02/14/krpano-1-19/</id>
+    <published>2015-02-14T00:00:00.000Z</published>
+    <updated>2017-03-23T03:29:59.122Z</updated>
+    
+    <content type="html"><![CDATA[<p>这个版本是第一个直接内置支持虚拟现实与立体3D。</p>
+<img src="/news/2015/02/14/krpano-1-19/krpano119-vr_rift.jpg" alt="krpano119-vr_rift.jpg" title="">]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这个版本是第一个直接内置支持虚拟现实与立体3D。&lt;/p&gt;
+&lt;img src=&quot;/news/2015/02/14/krpano-1-19/krpano119-vr_rift.jpg&quot; alt=&quot;krpano119-vr_rift.jpg&quot; title=&quot;&quot;&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Krpano 1.18 - HTML5 Panoramic Video</title>
+    <link href="http://krpano.milly.me/news/2014/10/17/krpano-1-18/"/>
+    <id>http://krpano.milly.me/news/2014/10/17/krpano-1-18/</id>
+    <published>2014-10-17T00:00:00.000Z</published>
+    <updated>2017-03-23T03:29:59.122Z</updated>
+    
+    <content type="html"><![CDATA[<p>该版本使用 WebGL 实现了全景视频，并做了较多性能提升。</p>
+<img src="/news/2014/10/17/krpano-1-18/krpano118-video-airpano.jpg" alt="krpano118-video-airpano.jpg" title="">
+<img src="/news/2014/10/17/krpano-1-18/krpano118-video-dimas.jpg" alt="krpano118-video-dimas.jpg" title="">]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;该版本使用 WebGL 实现了全景视频，并做了较多性能提升。&lt;/p&gt;
+&lt;img src=&quot;/news/2014/10/17/krpano-1-18/krpano118-video-airpano.jpg&quot; alt=&quot;krpano118-video-airpano.jpg&quot; 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>krpano 1.17 - HTML5 Multiresolution</title>
+    <link href="http://krpano.milly.me/news/2013/12/19/krpano-1-17/"/>
+    <id>http://krpano.milly.me/news/2013/12/19/krpano-1-17/</id>
+    <published>2013-12-19T00:00:00.000Z</published>
+    <updated>2017-03-23T03:29:59.118Z</updated>
+    
+    <content type="html"><![CDATA[<p>该版本支持 HTML5 多种分辨率，并且合并了 Flash 与 HTML5 的许可，同时对许可文件的格式进行了变更，防止应文件损坏导致许可失效。</p>
+<img src="/news/2013/12/19/krpano-1-17/krpano117-mres1.jpg" alt="krpano117-mres1.jpg" title="">
+<img src="/news/2013/12/19/krpano-1-17/krpano117-mres2.jpg" alt="krpano117-mres2.jpg" title="">
+<img src="/news/2013/12/19/krpano-1-17/krpano117-mres3.jpg" alt="krpano117-mres3.jpg" title="">
+<img src="/news/2013/12/19/krpano-1-17/krpano117-mres4.jpg" alt="krpano117-mres4.jpg" title="">]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;该版本支持 HTML5 多种分辨率，并且合并了 Flash 与 HTML5 的许可，同时对许可文件的格式进行了变更，防止应文件损坏导致许可失效。&lt;/p&gt;
+&lt;img src=&quot;/news/2013/12/19/krpano-1-17/krpano117-mres1.jpg&quot; 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>krpano 1.16 - HTML5 WebGL</title>
+    <link href="http://krpano.milly.me/news/2013/03/28/krpano-1-16/"/>
+    <id>http://krpano.milly.me/news/2013/03/28/krpano-1-16/</id>
+    <published>2013-03-28T00:00:00.000Z</published>
+    <updated>2017-03-23T03:29:59.118Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="WebGL-的支持"><a href="#WebGL-的支持" class="headerlink" title="WebGL 的支持"></a>WebGL 的支持</h2><p>使用 WebGL 取代之前的 CSS-3D 引擎，从而实现了鱼眼、小行星等，同时比 Flash 处理的更快更平滑，另外在纹理的处理上也更好，以下是两张对比图。</p>
+<img src="/news/2013/03/28/krpano-1-16/krpano116-webgl-mipmapping-compare-1.jpg" alt="krpano116-webgl-mipmapping-compare-1.jpg" title="">
+<img src="/news/2013/03/28/krpano-1-16/krpano116-webgl-mipmapping-compare-2.jpg" alt="krpano116-webgl-mipmapping-compare-2.jpg" title="">
+<h1 id="右键菜单"><a href="#右键菜单" class="headerlink" title="右键菜单"></a>右键菜单</h1><p>使用新的文式来绘制右键菜单，使得 Flash 与 HTML5 的右键菜单更一致，同时支持自定义。</p>
+<img src="/news/2013/03/28/krpano-1-16/krpano116-new-contextmenu.jpg" alt="krpano116-new-contextmenu.jpg" title="">
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;WebGL-的支持&quot;&gt;&lt;a href=&quot;#WebGL-的支持&quot; class=&quot;headerlink&quot; title=&quot;WebGL 的支持&quot;&gt;&lt;/a&gt;WebGL 的支持&lt;/h2&gt;&lt;p&gt;使用 WebGL 取代之前的 CSS-3D 引擎，从而实现了鱼眼、小行星等，同时比 
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

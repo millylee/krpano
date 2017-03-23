@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="keywords" content="krpano,全景图,全景视频,全景图制作,全景视频制作,全景图制作软件,全景视频制作软件,VR,VR助手,VR制作软件,krpano教程,krpano中文教程">
+  <meta name="description" content="krpano 是一款支持全平台的全景图与全景视频制作工具，也是目前市场上用于制作VR资源的工具。本站提供 krpano 中文教程与文档。">
+  <title>Krpano Droplet 说明文档 | Krpano 中文</title>
+  <!-- CSS -->
+  <!-- build:css build/css/navy.css -->
+  <link rel="stylesheet" href="/css/navy.css">
+  <!-- endbuild -->
+  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body class="">
+  <div id="container">
+    
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/" id="logo">Krpano 中文</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/" class="main-nav-link">首页</a><a href="/docs/" class="main-nav-link">文档</a><a href="/examples/" class="main-nav-link">案例</a><a href="/news/" class="main-nav-link">更新</a>
+    </nav>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Krpano Droplet 说明文档</h1>
+                <a href="https://github.com/millylee/krpano/edit/master/source/docs/krpano-droplet.md" class="article-edit-link" title="改进本文"><i class="fa fa-pencil"></i>改进本文</a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <h2 id="droplet-文件" class="article-heading"><a href="#droplet-文件" class="headerlink" title="droplet 文件"></a>droplet 文件<a class="article-anchor" href="#droplet-文件" aria-hidden="true"></a></h2><p>下图为 krpano 安装包所在目录，版本为 1.19 pr5。</p>
+<p><img src="/images/krpano-droplet.jpg" alt="droplet"></p>
+<h3 id="MAKE-PANO-NORMAL" class="article-heading"><a href="#MAKE-PANO-NORMAL" class="headerlink" title="MAKE PANO (NORMAL)"></a>MAKE PANO (NORMAL)<a class="article-anchor" href="#MAKE-PANO-NORMAL" aria-hidden="true"></a></h3><blockquote class="note info"><strong class="note-title">用法说明</strong><ul>
+<li>生成普通 (=单分辨率) 全景</li>
+<li>制作典型的360度全景</li>
+<li>全部全景图将会一次性载入. 默认下方块最大变长为2048像素(可以在配置文件中修改)</li>
+<li>包括默认的导航皮肤</li>
+<li>支持Flash和HTML5</li>
+</ul>
+</blockquote>
+<blockquote class="note tip"><strong class="note-title">Droplet 说明</strong><ul>
+<li>基于 kmakemultires 工具</li>
+<li>配置文件: normal.config</li>
+<li>默认模版/皮肤配置文件: defaultbuttons.skin</li>
+</ul>
+</blockquote>
+<h3 id="MAKE-PANO-MULTIRES" class="article-heading"><a href="#MAKE-PANO-MULTIRES" class="headerlink" title="MAKE PANO (MULTIRES)"></a>MAKE PANO (MULTIRES)<a class="article-anchor" href="#MAKE-PANO-MULTIRES" aria-hidden="true"></a></h3><blockquote class="note info"><strong class="note-title">用法说明</strong><ul>
+<li>生成多分辨率全景</li>
+<li>制作所有类型的全景</li>
+<li>只有特定的切片在需要时载入 没有尺寸/分辨率限制</li>
+<li>包含默认的导航皮肤</li>
+<li>支持Flash和HTML5</li>
+</ul>
+</blockquote>
+<blockquote class="note tip"><strong class="note-title">Droplet 说明</strong><ul>
+<li>基于 kmakemultires 工具</li>
+<li>配置文件: multiresconfig</li>
+<li>默认模版/皮肤配置文件: defaultbuttonsskin</li>
+</ul>
+</blockquote>
+<h3 id="MAKE-PANO-SINGLESWF" class="article-heading"><a href="#MAKE-PANO-SINGLESWF" class="headerlink" title="MAKE PANO (SINGLESWF)"></a>MAKE PANO (SINGLESWF)<a class="article-anchor" href="#MAKE-PANO-SINGLESWF" aria-hidden="true"></a></h3><blockquote class="note info"><strong class="note-title">用法说明</strong><ul>
+<li>生成普通 (=单分辨率) 全景同时将所有文件嵌在一个SWF文件中只输出一个SWF文件和一个HTML文件</li>
+<li>制作典型的360度全景 </li>
+<li>全部全景图将会一次性载入 默认下方块最大变长为2048像素(可以在配置文件中修改)</li>
+<li>包含默认的导航皮肤</li>
+<li>仅支持Flash</li>
+</ul>
+</blockquote>
+<blockquote class="note tip"><strong class="note-title">Droplet 说明</strong><ul>
+<li>基于 kmakemultires 工具</li>
+<li>配置文件: singleswfconfig</li>
+<li>默认模版/皮肤配置文件: defaultbuttonsskin</li>
+</ul>
+</blockquote>
+<h3 id="MAKE-PANO-FLAT" class="article-heading"><a href="#MAKE-PANO-FLAT" class="headerlink" title="MAKE PANO (FLAT)"></a>MAKE PANO (FLAT)<a class="article-anchor" href="#MAKE-PANO-FLAT" aria-hidden="true"></a></h3><blockquote class="note info"><strong class="note-title">用法说明</strong><ul>
+<li>生成平面切片多分辨率图像</li>
+<li>制作平面图像 输出时既定为平面图像</li>
+<li>只有特定的切片在需要时载入 没有尺寸/分辨率限制</li>
+<li>包含有默认导航按钮的皮肤，针对特定的视角</li>
+<li>支持Flash与HTML5</li>
+</ul>
+</blockquote>
+<blockquote class="note tip"><strong class="note-title">Droplet 说明</strong><ul>
+<li>基于 kmakemultires 工具</li>
+<li>配置文件: flatconfig</li>
+<li>默认模版/皮肤配置文件: flatxml / flatskinxml</li>
+</ul>
+</blockquote>
+<h3 id="MAKE-VTOUR-NORMAL" class="article-heading"><a href="#MAKE-VTOUR-NORMAL" class="headerlink" title="MAKE VTOUR (NORMAL)"></a>MAKE VTOUR (NORMAL)<a class="article-anchor" href="#MAKE-VTOUR-NORMAL" aria-hidden="true"></a></h3><blockquote class="note info"><strong class="note-title">用法说明</strong><ul>
+<li>生成普通 (=单分辨率) 全景并将它们整合到一个虚拟漫游中</li>
+<li>制作典型的360度全景</li>
+<li>全部全景图将会一次性载入 默认下方块最大变长为2048像素(可以在配置文件中修改)</li>
+<li>包含一个包括导航按钮、可滚动缩略图以及可选择必应地图以及重力感应插件的默认皮肤</li>
+<li>支持Flash和HTML5</li>
+</ul>
+</blockquote>
+<blockquote class="note tip"><strong class="note-title">Droplet 说明</strong><ul>
+<li>基于 kmakemultires 工具</li>
+<li>配置文件: vtour-normalconfig</li>
+<li>默认模版/皮肤配置文件: vtourskin-thumbnails-bingmaps-gyroskin</li>
+</ul>
+</blockquote>
+<h3 id="MAKE-VTOUR-MULTIRES" class="article-heading"><a href="#MAKE-VTOUR-MULTIRES" class="headerlink" title="MAKE VTOUR (MULTIRES)"></a>MAKE VTOUR (MULTIRES)<a class="article-anchor" href="#MAKE-VTOUR-MULTIRES" aria-hidden="true"></a></h3><blockquote class="note info"><strong class="note-title">用法说明</strong><ul>
+<li>生成多分辨率全景并将它们整合到一个虚拟漫游中</li>
+<li>制作所有类型全景图像</li>
+<li>只有特定的切片在需要时载入 没有尺寸/分辨率限制</li>
+<li>包含一个包括导航按钮、可滚动缩略图以及可选择必应地图以及重力感应插件的默认皮肤</li>
+<li>支持Flash和HTML5</li>
+</ul>
+</blockquote>
+<blockquote class="note tip"><strong class="note-title">Droplet 说明</strong><ul>
+<li>基于 kmakemultires 工具</li>
+<li>配置文件: vtour-multiresconfig</li>
+<li>默认模版/皮肤配置文件:</li>
+<li>vtourskin-thumbnails-bingmaps-gyroskin</li>
+</ul>
+</blockquote>
+<h3 id="MAKE-OBJECT" class="article-heading"><a href="#MAKE-OBJECT" class="headerlink" title="MAKE OBJECT"></a>MAKE OBJECT<a class="article-anchor" href="#MAKE-OBJECT" aria-hidden="true"></a></h3><blockquote class="note info"><strong class="note-title">用法说明</strong><ul>
+<li>生成若干个平面多分辨率图像并将它们整合到一个可缩放旋转的360物体影像中</li>
+<li>制作平面图像物体 所有物体图片的尺寸必须一致</li>
+<li>只有特定的切片在需要时载入 没有尺寸/分辨率限制</li>
+<li>包含一个特定的控制物体的皮肤</li>
+<li>仅支持Flash</li>
+</ul>
+</blockquote>
+<blockquote class="note tip"><strong class="note-title">Droplet 说明</strong><ul>
+<li>基于 kmakemultires 工具</li>
+<li>配置文件: objectconfig</li>
+<li>默认模版/皮肤配置文件: objectxml / objectskinxml</li>
+</ul>
+</blockquote>
+<h3 id="Convert-SPHERE-to-CUBE" class="article-heading"><a href="#Convert-SPHERE-to-CUBE" class="headerlink" title="Convert SPHERE to CUBE"></a>Convert SPHERE to CUBE<a class="article-anchor" href="#Convert-SPHERE-to-CUBE" aria-hidden="true"></a></h3><blockquote class="note info"><strong class="note-title">用法说明</strong><ul>
+<li>将球面图像转换至立方体图</li>
+<li>输出的立方体格式、尺寸以及图像尺寸可以在配置文件中修改</li>
+</ul>
+</blockquote>
+<blockquote class="note tip"><strong class="note-title">Droplet 说明</strong><ul>
+<li>基于 ktransform 工具</li>
+<li>配置文件: convertdropletsconfig</li>
+</ul>
+</blockquote>
+<h3 id="Convert-CUBE-to-SPHERE" class="article-heading"><a href="#Convert-CUBE-to-SPHERE" class="headerlink" title="Convert CUBE to SPHERE"></a>Convert CUBE to SPHERE<a class="article-anchor" href="#Convert-CUBE-to-SPHERE" aria-hidden="true"></a></h3><blockquote class="note info"><strong class="note-title">用法说明</strong><ul>
+<li>将六张立方体图像转换成一张球面全景图</li>
+<li>输出的图像尺寸和格式可以在配置文件中修改</li>
+</ul>
+</blockquote>
+<blockquote class="note tip"><strong class="note-title">Droplet 说明</strong><ul>
+<li>基于 kcube2sphere 工具</li>
+<li>配置文件: convertdropletsconfig</li>
+</ul>
+</blockquote>
+<h3 id="Encrypt-XML" class="article-heading"><a href="#Encrypt-XML" class="headerlink" title="Encrypt XML"></a>Encrypt XML<a class="article-anchor" href="#Encrypt-XML" aria-hidden="true"></a></h3><blockquote class="note info"><strong class="note-title">用法说明</strong><ul>
+<li>将xml文件拖放进droplet进行加密</li>
+<li>加密过程中xml文件会自动被压缩</li>
+</ul>
+</blockquote>
+<blockquote class="note tip"><strong class="note-title">Droplet 说明</strong><ul>
+<li>基于 encrypt 工具</li>
+</ul>
+</blockquote>
+<h2 id="自定义-droplet" class="article-heading"><a href="#自定义-droplet" class="headerlink" title="自定义 droplet"></a>自定义 droplet<a class="article-anchor" href="#自定义-droplet" aria-hidden="true"></a></h2><p>如果内置<code>droplet</code>不能满足需求或者需要对一些参数进行自定义。只要复制并重命名一个配置文件与皮肤配置文件，然后复制并重命名一个<code>droplet</code>，修改里面的配置路径即可。</p>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2017-03-23T03:29:59.122Z" itemprop="dateModified">上次更新：2017-03-23</time>
+                <a href="files.html" class="article-footer-prev" title="文件说明"><i class="fa fa-chevron-left"></i><span>上一篇</span></a><a href="vtour.html" class="article-footer-next" title="Vtour 文件夹说明"><span>下一篇</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">目录</strong>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#droplet-文件"><span class="toc-text">droplet 文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#MAKE-PANO-NORMAL"><span class="toc-text">MAKE PANO (NORMAL)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MAKE-PANO-MULTIRES"><span class="toc-text">MAKE PANO (MULTIRES)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MAKE-PANO-SINGLESWF"><span class="toc-text">MAKE PANO (SINGLESWF)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MAKE-PANO-FLAT"><span class="toc-text">MAKE PANO (FLAT)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MAKE-VTOUR-NORMAL"><span class="toc-text">MAKE VTOUR (NORMAL)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MAKE-VTOUR-MULTIRES"><span class="toc-text">MAKE VTOUR (MULTIRES)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MAKE-OBJECT"><span class="toc-text">MAKE OBJECT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Convert-SPHERE-to-CUBE"><span class="toc-text">Convert SPHERE to CUBE</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Convert-CUBE-to-SPHERE"><span class="toc-text">Convert CUBE to SPHERE</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Encrypt-XML"><span class="toc-text">Encrypt XML</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#自定义-droplet"><span class="toc-text">自定义 droplet</span></a></li></ol>
+              <a href="#" id="article-toc-top">回到顶部</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><strong class="sidebar-title">开始使用</strong><a href="index.html" class="sidebar-link">全景漫游</a><a href="files.html" class="sidebar-link">文件说明</a><a href="krpano-droplet.html" class="sidebar-link current">Krpano Droplet</a><a href="vtour.html" class="sidebar-link">Vtour 文件夹说明</a><a href="krpano-element.html" class="sidebar-link">Krpano 内置元素</a><strong class="sidebar-title">高级用法</strong><a href="javascript-interface.html" class="sidebar-link">与 JavaScript 交互</a><a href="general-setting.html" class="sidebar-link">常用设置</a></div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2017 <a href="//milly.me/" target="_blank">Milly Lee</a><br>
+      Documentation licensed under <a href="//creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/millyleecn" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/millylee" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>  
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/" class="mobile-nav-link">首页</a><a href="/docs/" class="mobile-nav-link">文档</a><a href="/examples/" class="mobile-nav-link">案例</a><a href="/news/" class="mobile-nav-link">更新</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/millylee" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">开始使用</strong><a href="index.html" class="mobile-nav-link">全景漫游</a><a href="files.html" class="mobile-nav-link">文件说明</a><a href="krpano-droplet.html" class="mobile-nav-link current">Krpano Droplet</a><a href="vtour.html" class="mobile-nav-link">Vtour 文件夹说明</a><a href="krpano-element.html" class="mobile-nav-link">Krpano 内置元素</a><strong class="mobile-nav-title">高级用法</strong><a href="javascript-interface.html" class="mobile-nav-link">与 JavaScript 交互</a><a href="general-setting.html" class="mobile-nav-link">常用设置</a>
+    
+  </div>
+</nav>
+  <!-- scripts -->
+<!-- build:js build/js/main.js -->
+<script src="/js/toc.js"></script>
+<script src="/js/mobile_nav.js"></script>
+<!-- endbuild -->
+<!-- Baidu Analytics -->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + "//hm.baidu.com/hm.js?cb9af96e6e2fed8bd03189163e3a47b5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

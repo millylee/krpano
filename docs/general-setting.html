@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="keywords" content="krpano,全景图,全景视频,全景图制作,全景视频制作,全景图制作软件,全景视频制作软件,VR,VR助手,VR制作软件,krpano教程,krpano中文教程">
+  <meta name="description" content="krpano 是一款支持全平台的全景图与全景视频制作工具，也是目前市场上用于制作VR资源的工具。本站提供 krpano 中文教程与文档。">
+  <title>常用设置 | Krpano 中文</title>
+  <!-- CSS -->
+  <!-- build:css build/css/navy.css -->
+  <link rel="stylesheet" href="/css/navy.css">
+  <!-- endbuild -->
+  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body class="">
+  <div id="container">
+    
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/" id="logo">Krpano 中文</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/" class="main-nav-link">首页</a><a href="/docs/" class="main-nav-link">文档</a><a href="/examples/" class="main-nav-link">案例</a><a href="/news/" class="main-nav-link">更新</a>
+    </nav>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">常用设置</h1>
+                <a href="https://github.com/millylee/krpano/edit/master/source/docs/general-setting.md" class="article-edit-link" title="改进本文"><i class="fa fa-pencil"></i>改进本文</a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <h2 id="小行星开场" class="article-heading"><a href="#小行星开场" class="headerlink" title="小行星开场"></a>小行星开场<a class="article-anchor" href="#小行星开场" aria-hidden="true"></a></h2><p>小行星开场是 krpano 1.19 pr3+ 默认皮肤带有的功能，默认关闭。</p>
+<p><img src="/images/general-littleplanet.jpg" alt="小行星"></p>
+<p>想开启小行星也很简单，可以找到<code>tour.xml</code>，然后搜索<code>littleplanetintro</code>将其值设置为<code>true</code>即可。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">skin_settings</span></span></div><div class="line">    <span class="attr">...</span></div><div class="line">    <span class="attr">littleplanetintro</span>=<span class="string">"true"</span></div><div class="line">    <span class="attr">...</span></div><div class="line">/&gt;</div></pre></td></tr></table></figure>
+<p>更详细的设置可以在<code>skin/vtourskin.xml</code>文件中修改，具体代码在<code>skin_setup_littleplanetintro</code>这个 action 中。</p>
+<h2 id="加载动画" class="article-heading"><a href="#加载动画" class="headerlink" title="加载动画"></a>加载动画<a class="article-anchor" href="#加载动画" aria-hidden="true"></a></h2><p>全景漫游图片非常多，k数也不小，而默认的 viewer 只有<code>loading...</code>这种静态提醒，不过我们可以在官方的案例文件夹中找到<code>loading-progress</code>这个文件夹，将需要的文件内容复制到项目中的<code>skin</code>文件夹，然后在<code>tour.xml</code>文件中引入该文件即可，这样重新打开就可以看到有动态的进度条了。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">include</span> <span class="attr">url</span>=<span class="string">"skin/loadingbar.xml"</span> /&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="修改右键菜单" class="article-heading"><a href="#修改右键菜单" class="headerlink" title="修改右键菜单"></a>修改右键菜单<a class="article-anchor" href="#修改右键菜单" aria-hidden="true"></a></h2><p>找到你引入的皮肤文件，默认在<code>vtourskin.xml</code>，然后修改下面这些地方即可自定义右键菜单，但像版权、全屏菜单即使删除也会存在。</p>
+<p><img src="/images/general-contextmenu.jpg" alt="右键菜单"></p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">contextmenu</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"fv"</span> <span class="attr">caption</span>=<span class="string">"鱼眼视图"</span> <span class="attr">onclick</span>=<span class="string">"skin_view_fisheye();"</span> <span class="attr">showif</span>=<span class="string">"view.vlookatrange == 180"</span> <span class="attr">devices</span>=<span class="string">"flash|webgl"</span> <span class="attr">separator</span>=<span class="string">"true"</span> /&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">contextmenu</span>&gt;</span></div></pre></td></tr></table></figure>
+<blockquote class="note info"><strong class="note-title">contextmenu元素</strong><ul>
+<li><code>caption</code> 右键菜单显示的文字</li>
+<li><code>onclick</code> 控制点击后执行的动作，动作由 action 定义</li>
+<li><code>showif</code> 显示条目的条件</li>
+<li><code>devices</code> 控制在 flash/webgl 哪个模式中出现</li>
+<li><code>separator</code> 显示分隔符来分隔菜单</li>
+</ul>
+</blockquote>
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2017-03-23T03:29:59.122Z" itemprop="dateModified">上次更新：2017-03-23</time>
+                <a href="javascript-interface.html" class="article-footer-prev" title="与 JavaScript 交互"><i class="fa fa-chevron-left"></i><span>上一篇</span></a>
+              </footer>
+              
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">目录</strong>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#小行星开场"><span class="toc-text">小行星开场</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#加载动画"><span class="toc-text">加载动画</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改右键菜单"><span class="toc-text">修改右键菜单</span></a></li></ol>
+              <a href="#" id="article-toc-top">回到顶部</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><strong class="sidebar-title">开始使用</strong><a href="index.html" class="sidebar-link">全景漫游</a><a href="files.html" class="sidebar-link">文件说明</a><a href="krpano-droplet.html" class="sidebar-link">Krpano Droplet</a><a href="vtour.html" class="sidebar-link">Vtour 文件夹说明</a><a href="krpano-element.html" class="sidebar-link">Krpano 内置元素</a><strong class="sidebar-title">高级用法</strong><a href="javascript-interface.html" class="sidebar-link">与 JavaScript 交互</a><a href="general-setting.html" class="sidebar-link current">常用设置</a></div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2017 <a href="//milly.me/" target="_blank">Milly Lee</a><br>
+      Documentation licensed under <a href="//creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/millyleecn" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/millylee" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>  
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/" class="mobile-nav-link">首页</a><a href="/docs/" class="mobile-nav-link">文档</a><a href="/examples/" class="mobile-nav-link">案例</a><a href="/news/" class="mobile-nav-link">更新</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/millylee" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">开始使用</strong><a href="index.html" class="mobile-nav-link">全景漫游</a><a href="files.html" class="mobile-nav-link">文件说明</a><a href="krpano-droplet.html" class="mobile-nav-link">Krpano Droplet</a><a href="vtour.html" class="mobile-nav-link">Vtour 文件夹说明</a><a href="krpano-element.html" class="mobile-nav-link">Krpano 内置元素</a><strong class="mobile-nav-title">高级用法</strong><a href="javascript-interface.html" class="mobile-nav-link">与 JavaScript 交互</a><a href="general-setting.html" class="mobile-nav-link current">常用设置</a>
+    
+  </div>
+</nav>
+  <!-- scripts -->
+<!-- build:js build/js/main.js -->
+<script src="/js/toc.js"></script>
+<script src="/js/mobile_nav.js"></script>
+<!-- endbuild -->
+<!-- Baidu Analytics -->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + "//hm.baidu.com/hm.js?cb9af96e6e2fed8bd03189163e3a47b5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

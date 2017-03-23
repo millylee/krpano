@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="keywords" content="krpano,全景图,全景视频,全景图制作,全景视频制作,全景图制作软件,全景视频制作软件,VR,VR助手,VR制作软件,krpano教程,krpano中文教程">
+  <meta name="description" content="krpano 是一款支持全平台的全景图与全景视频制作工具，也是目前市场上用于制作VR资源的工具。本站提供 krpano 中文教程与文档。">
+  <title>下载包文件说明 | Krpano 中文</title>
+  <!-- CSS -->
+  <!-- build:css build/css/navy.css -->
+  <link rel="stylesheet" href="/css/navy.css">
+  <!-- endbuild -->
+  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body class="">
+  <div id="container">
+    
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/" id="logo">Krpano 中文</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/" class="main-nav-link">首页</a><a href="/docs/" class="main-nav-link">文档</a><a href="/examples/" class="main-nav-link">案例</a><a href="/news/" class="main-nav-link">更新</a>
+    </nav>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">下载包文件说明</h1>
+                <a href="https://github.com/millylee/krpano/edit/master/source/docs/files.md" class="article-edit-link" title="改进本文"><i class="fa fa-pencil"></i>改进本文</a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <h2 id="templates-文件夹" class="article-heading"><a href="#templates-文件夹" class="headerlink" title="templates 文件夹"></a>templates 文件夹<a class="article-anchor" href="#templates-文件夹" aria-hidden="true"></a></h2><p>官方一系列模版所在的文件夹，包括了<code>图片</code>、<code>xml</code>、<code>html</code>以及相关配置文件等。通过对这里的了解和修改，我们可以做出自己的皮肤模版，然后一键生成，实现批量的工作流。当然，正常情况下，你也无需从这里拷贝，因为在<code>droplet</code>过程中会自动生成。部分模版在默认<code>droplet</code>过程中并没有使用到。</p>
+<p><img src="/images/files-templates.jpg" alt="templates"></p>
+<h2 id="viewer-文件夹" class="article-heading"><a href="#viewer-文件夹" class="headerlink" title="viewer 文件夹"></a>viewer 文件夹<a class="article-anchor" href="#viewer-文件夹" aria-hidden="true"></a></h2><p><img src="/images/files-viewer.jpg" alt="viewer"></p>
+<p>krpano 下载包的官方插件、引擎、案例的存放位置，同时也是让案例文件夹能够正确显示的 viewer 所在的位置。其中<code>plugins</code>是当前版本的所有官方插件；<code>examples</code>是官方提供的案例。</p>
+<blockquote class="note tip"><strong class="note-title">小贴士</strong><p>自身项目的 viewer（js和swf）会在<code>droplet</code>过程中自动生成无需从这里拷贝</p>
+</blockquote>
+<h2 id="droplet-bat-文件" class="article-heading"><a href="#droplet-bat-文件" class="headerlink" title="droplet.bat 文件"></a>droplet.bat 文件<a class="article-anchor" href="#droplet-bat-文件" aria-hidden="true"></a></h2><p>Krpano Droplets 是<code>krpano</code>命令行工具加上配置文件<code>config</code>的一个快捷方式。<code>droplets</code>使用方式非常简单，将文件（通常是图片或者xml等文件）直接拖放在<code>droplet</code>图标上松开即可。</p>
+<p>详细说明请查看<a href="/docs/krpano-droplet.html">Krpano Droplets</a>。</p>
+<h2 id="krpanotools" class="article-heading"><a href="#krpanotools" class="headerlink" title="krpanotools"></a>krpanotools<a class="article-anchor" href="#krpanotools" aria-hidden="true"></a></h2><p>包含 32/64 位的 krpanotools32.exe 与 krpanotools64.exe，该两个文件为 krpano 项目核心，会在命令行中调用它们。</p>
+<h2 id="krpano-Testing-Server" class="article-heading"><a href="#krpano-Testing-Server" class="headerlink" title="krpano Testing Server"></a>krpano Testing Server<a class="article-anchor" href="#krpano-Testing-Server" aria-hidden="true"></a></h2><p>krpano 自带的静态文件本地服务环境，使用它可以路过本地文件案例限制来查看 Flash 与 HTML5 效果，另外它还可以控制浏览器缓存、限制下载速度模拟网络条件。不好用，直接使用<a href="http://mikit.milly.me" target="_blank" rel="external">MiKit</a>的功能即可。</p>
+<p><img src="/images/files-server.jpg" alt="krpano Testing Server"></p>
+<h2 id="krpano-tools" class="article-heading"><a href="#krpano-tools" class="headerlink" title="krpano tools"></a>krpano tools<a class="article-anchor" href="#krpano-tools" aria-hidden="true"></a></h2><p>用来加密保护全景项目的可视化工具，需要注册才可以使用，这里就不扩展。</p>
+<p><img src="/images/files-krpano-tool.jpg" alt="krpano tools"></p>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2017-03-23T03:29:59.122Z" itemprop="dateModified">上次更新：2017-03-23</time>
+                <a href="index.html" class="article-footer-prev" title="全景漫游"><i class="fa fa-chevron-left"></i><span>上一篇</span></a><a href="krpano-droplet.html" class="article-footer-next" title="Krpano Droplet"><span>下一篇</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">目录</strong>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#templates-文件夹"><span class="toc-text">templates 文件夹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#viewer-文件夹"><span class="toc-text">viewer 文件夹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#droplet-bat-文件"><span class="toc-text">droplet.bat 文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#krpanotools"><span class="toc-text">krpanotools</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#krpano-Testing-Server"><span class="toc-text">krpano Testing Server</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#krpano-tools"><span class="toc-text">krpano tools</span></a></li></ol>
+              <a href="#" id="article-toc-top">回到顶部</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><strong class="sidebar-title">开始使用</strong><a href="index.html" class="sidebar-link">全景漫游</a><a href="files.html" class="sidebar-link current">文件说明</a><a href="krpano-droplet.html" class="sidebar-link">Krpano Droplet</a><a href="vtour.html" class="sidebar-link">Vtour 文件夹说明</a><a href="krpano-element.html" class="sidebar-link">Krpano 内置元素</a><strong class="sidebar-title">高级用法</strong><a href="javascript-interface.html" class="sidebar-link">与 JavaScript 交互</a><a href="general-setting.html" class="sidebar-link">常用设置</a></div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2017 <a href="//milly.me/" target="_blank">Milly Lee</a><br>
+      Documentation licensed under <a href="//creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/millyleecn" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/millylee" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>  
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/" class="mobile-nav-link">首页</a><a href="/docs/" class="mobile-nav-link">文档</a><a href="/examples/" class="mobile-nav-link">案例</a><a href="/news/" class="mobile-nav-link">更新</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/millylee" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">开始使用</strong><a href="index.html" class="mobile-nav-link">全景漫游</a><a href="files.html" class="mobile-nav-link current">文件说明</a><a href="krpano-droplet.html" class="mobile-nav-link">Krpano Droplet</a><a href="vtour.html" class="mobile-nav-link">Vtour 文件夹说明</a><a href="krpano-element.html" class="mobile-nav-link">Krpano 内置元素</a><strong class="mobile-nav-title">高级用法</strong><a href="javascript-interface.html" class="mobile-nav-link">与 JavaScript 交互</a><a href="general-setting.html" class="mobile-nav-link">常用设置</a>
+    
+  </div>
+</nav>
+  <!-- scripts -->
+<!-- build:js build/js/main.js -->
+<script src="/js/toc.js"></script>
+<script src="/js/mobile_nav.js"></script>
+<!-- endbuild -->
+<!-- Baidu Analytics -->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + "//hm.baidu.com/hm.js?cb9af96e6e2fed8bd03189163e3a47b5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>

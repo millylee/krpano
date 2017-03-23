@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="keywords" content="krpano,全景图,全景视频,全景图制作,全景视频制作,全景图制作软件,全景视频制作软件,VR,VR助手,VR制作软件,krpano教程,krpano中文教程">
+  <meta name="description" content="krpano 是一款支持全平台的全景图与全景视频制作工具，也是目前市场上用于制作VR资源的工具。本站提供 krpano 中文教程与文档。">
+  <title>Krpano 内置元素 | Krpano 中文</title>
+  <!-- CSS -->
+  <!-- build:css build/css/navy.css -->
+  <link rel="stylesheet" href="/css/navy.css">
+  <!-- endbuild -->
+  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body class="">
+  <div id="container">
+    
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/" id="logo">Krpano 中文</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/" class="main-nav-link">首页</a><a href="/docs/" class="main-nav-link">文档</a><a href="/examples/" class="main-nav-link">案例</a><a href="/news/" class="main-nav-link">更新</a>
+    </nav>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Krpano 内置元素</h1>
+                <a href="https://github.com/millylee/krpano/edit/master/source/docs/krpano-element.md" class="article-edit-link" title="改进本文"><i class="fa fa-pencil"></i>改进本文</a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <p>Krpano 的代码可分为静态与动态两种，静态代码是内置元素以及可自定义的其它元素；动态代码特指 action 元素的内容以及特定的元素数值，例如事件触发动作。</p>
+<blockquote class="note info"><strong class="note-title">01.krpano</strong><p>krpano 元素是 krpano xml 文件的根元素。任何一个 krpano xml 文件内的其它元素都要被 krpano 元素所嵌套。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">02.include</strong><p>include 元素可引入其它 xml 文件的内容，例如我们常要用到的 vtourskin.xml 就是使用 include 嵌入到主 xml 中。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">03.preview</strong><p>预览图设置，也就是全景图完全载入之前的模糊图像，但因为体积较小，因此载入速度较快，会在全景图之前先载入，避免黑屏。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">04.image</strong><p>image 元素控制全景图设置，包括全景图类型，渐进分辨率切片显示等。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">05.view</strong><p>view 元素控制全景的视野，例如起始视角、视角限制与缩放等等。当要设置限制视角或设定特定的初始视角时，需要自行设定或使用插件获取代码。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">06.area</strong><p>area 元素控制全景图在浏览器窗口中显示区域大小。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">07.display</strong><p>控制全景图的显示品质。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">08.control</strong><p>设置鼠标、键盘以及触摸设备对全景浏览的控制方式。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">09.cursors</strong><p>设置鼠标光标样式。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">10.autorotate</strong><p>控制自动旋转。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">11.plugin</strong><p>用来调用插件、插入图片或生成容器。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">12.layer</strong><p>与 plugin 作用相同，只是名称不同。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">13.hotspot</strong><p>热点，可在 3D 空间中插入图片，使之随着 3D 空间一同运动，可制作很多特效。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">14.style</strong><p>可以保存其它元素的属性子集。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">15.events</strong><p>可调用各类型事件，例如全景载入的不同阶段以及鼠标触发的不同行为等。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">16.action</strong><p>自定义动态代码。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">17.contextmenu</strong><p>定义右键菜单的内容。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">18.network</strong><p>控制图像的下载、缓存与解码。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">19.network</strong><p>控制图像的下载、缓存与解码。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">20.menory</strong><p>控制全景图在设备中的存储。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">21.security</strong><p>Flashplayer 和 HTML5 相关的安全/跨域设置。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">22.lensflareset</strong><p>镜头眩光的设置（目前只能在flash下使用）。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">203.lensflare</strong><p>生成镜头眩光（目前只能在flash下使用）。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">24.data</strong><p>可放置任意的数据。</p>
+</blockquote>
+<blockquote class="note info"><strong class="note-title">25.scene</strong><p>可放置任意 krpano 元素。每个 scene 元素只有在被 loadscene 时才会被载入到浏览器进行解析。</p>
+</blockquote>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2017-03-23T03:29:59.122Z" itemprop="dateModified">上次更新：2017-03-23</time>
+                <a href="vtour.html" class="article-footer-prev" title="Vtour 文件夹说明"><i class="fa fa-chevron-left"></i><span>上一篇</span></a><a href="javascript-interface.html" class="article-footer-next" title="与 JavaScript 交互"><span>下一篇</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">目录</strong>
+              
+              <a href="#" id="article-toc-top">回到顶部</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><strong class="sidebar-title">开始使用</strong><a href="index.html" class="sidebar-link">全景漫游</a><a href="files.html" class="sidebar-link">文件说明</a><a href="krpano-droplet.html" class="sidebar-link">Krpano Droplet</a><a href="vtour.html" class="sidebar-link">Vtour 文件夹说明</a><a href="krpano-element.html" class="sidebar-link current">Krpano 内置元素</a><strong class="sidebar-title">高级用法</strong><a href="javascript-interface.html" class="sidebar-link">与 JavaScript 交互</a><a href="general-setting.html" class="sidebar-link">常用设置</a></div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2017 <a href="//milly.me/" target="_blank">Milly Lee</a><br>
+      Documentation licensed under <a href="//creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/millyleecn" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/millylee" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>  
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/" class="mobile-nav-link">首页</a><a href="/docs/" class="mobile-nav-link">文档</a><a href="/examples/" class="mobile-nav-link">案例</a><a href="/news/" class="mobile-nav-link">更新</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/millylee" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">开始使用</strong><a href="index.html" class="mobile-nav-link">全景漫游</a><a href="files.html" class="mobile-nav-link">文件说明</a><a href="krpano-droplet.html" class="mobile-nav-link">Krpano Droplet</a><a href="vtour.html" class="mobile-nav-link">Vtour 文件夹说明</a><a href="krpano-element.html" class="mobile-nav-link current">Krpano 内置元素</a><strong class="mobile-nav-title">高级用法</strong><a href="javascript-interface.html" class="mobile-nav-link">与 JavaScript 交互</a><a href="general-setting.html" class="mobile-nav-link">常用设置</a>
+    
+  </div>
+</nav>
+  <!-- scripts -->
+<!-- build:js build/js/main.js -->
+<script src="/js/toc.js"></script>
+<script src="/js/mobile_nav.js"></script>
+<!-- endbuild -->
+<!-- Baidu Analytics -->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + "//hm.baidu.com/hm.js?cb9af96e6e2fed8bd03189163e3a47b5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>
